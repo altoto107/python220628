@@ -1,6 +1,6 @@
 #Function3.py
 
-from re import X
+from re import A, X
 
 
 x = 2
@@ -32,3 +32,20 @@ lst = [1,2,3]
 print(id(lst))
 lst.append(4)
 print(id(lst))
+
+
+
+#불변형식을 함수 내부에서 읽기+쓰기
+g = 1
+#전역 변수
+def testScope(a):
+    global g
+    g = 2
+#내부 변수에서 2로 변경
+    return g+a
+
+#호출 
+print(testScope(1))
+print("전역 변수 g:", g)
+
+

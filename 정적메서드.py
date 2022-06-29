@@ -1,4 +1,5 @@
 # 정적메서드.py
+# Static 메소드
 class MyCalc(object):
     @staticmethod
     def my_add(x,y):

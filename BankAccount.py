@@ -3,6 +3,8 @@
 #은행의 계정을 표현한 클래스 
 class BankAccount:
     def __init__(self, id, name, balance):
+        #기본은 Public
+        #멤버변수를 숨김(이름 변경)
         self.id = id
         self.name = name 
         self.balance = balance 
